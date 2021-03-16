@@ -21,7 +21,7 @@ todoTextBox.prototype.onChange = function() {
 var todoAddButton = function TodoAddButton(store, selector) {
   this.selector = selector;
   this.store = store;
-  this.onClick = this.onClick.bind(this);
+  this.onClick = this.onClick.bind(this); 
   $(this.selector).click(this.onClick);
 };
 
